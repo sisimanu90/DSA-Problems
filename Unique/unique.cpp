@@ -20,7 +20,7 @@ int findUnique(int *arr, int size)
 
 int main()
 {
-    int arr[] = {4, 3, 2, 7, 8, 2, 3, 1};
+    int arr[] = {2, 3, 1 ,6 ,3, 6 ,2};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     int unique = findUnique(arr, size);
