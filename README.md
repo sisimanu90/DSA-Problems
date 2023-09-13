@@ -1,2 +1,2 @@
-# LeetCode-Problems
+# DSA-Problems
 Created using [LeetHub](https://github.com/QasimWani/LeetHub)
