@@ -12,18 +12,16 @@ int findDuplicate(vector<int> &arr) {
         xorAll ^= arr[i];
     }
     
-    // XOR all numbers from 1 to n-1
-    int xorNMinus1 = 0;
     for (int i = 1; i < n; i++) {
-        xorNMinus1 ^= i;
+        xorAll^= i;
     }
     
     // The result will be the duplicate element
-    return xorAll ^ xorNMinus1;
+    return xorAll;
 }
 
 int main() {
-    vector<int> arr = {4, 3, 2, 7, 8, 2, 3, 1};
+    vector<int> arr = {1,2,3,4,4};
     
     // Find the duplicate element in the array
     int duplicate = findDuplicate(arr);
