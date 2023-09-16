@@ -5,7 +5,7 @@ int binarySearch(int arr[],int n,int key){
 	int end=n-1;
 
 	while(start<=end){
-		int mid=(start+end)/2;
+		int mid=start +(end-start)/2;
 		if(arr[mid]==key){
 			return mid;
 		}
@@ -21,7 +21,8 @@ int binarySearch(int arr[],int n,int key){
 	
 		
 	}
-	
+	//when we calculate mid if start and end is 2^31-1 then it gives a value out of int range so we use 
+	//mid=start+ (end-start)/2
 
 int main(){
 	int arr[6]={3,5,9,13,24,27};
