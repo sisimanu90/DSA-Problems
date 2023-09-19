@@ -24,7 +24,7 @@ void printArray(vector<int>& arr,int n){
     cout<<endl;
 }
 int main(){
-    vector<int> arr={67,49,2,54,6,9};
+    vector<int> arr={67,49,2,54,7,9};
     insertionSort(6,arr);
     printArray(arr,6);
 
