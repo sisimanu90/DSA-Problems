@@ -23,4 +23,20 @@ int main(){
     }
     cout<<endl;
 
+    min.push(5);
+    min.push(1);
+    min.push(0);
+    min.push(4);
+    min.push(3);
+
+    int m=min.size();
+    for(int i=0;i<m;i++){
+        cout<<min.top()<<" ";
+        min.pop();
+
+    }
+    cout<<endl;
+
+    cout<<"Is Empty? "<<min.empty()<<endl;
+
 }
